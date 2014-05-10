@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ceylan demo</title>
+
+    <style>
+        body
+        {
+            background-color: #fafafa;
+        }
+        
+        .container
+        {
+            max-width: 70%;
+            margin: auto;
+            padding: 5%;
+            height: 800px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .container textarea
+        {
+            width: 100%;
+            height: 300px;
+            padding: 5px;
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <textarea id="demo-aera">
+Cupcake ipsum dolor. Sit amet candy chocolate wafer jelly-o jelly. Fruitcake apple pie powder.
+
+Jujubes marzipan sweet pie applicake pastry bear claw. Pudding soufflé I love I love. Brownie muffin tart.
+Tart apple pie muffin cotton candy dessert jelly beans. Tootsie roll dragée wafer donut donut halvah.
+Chocolate tiramisu jelly beans gummies. Icing gummies bear claw.
+
+Ice cream cupcake powder. Danish I love pudding wafer sugar plum topping I love.
+Halvah I love powder jelly-o pastry topping ice cream lollipop candy canes.
+I love jelly beans chupa chups danish jujubes danish muffin soufflé.
+        </textarea>
+    </div>
+</body>
+
+<script src="../../../node_modules/underscore/underscore.js"></script>
+<script src="../../lib/ceylan.js"></script>
+<script>
+    c = new Ceylan("#demo-aera");
+    c._showCaret();
+</script>
+</html>
