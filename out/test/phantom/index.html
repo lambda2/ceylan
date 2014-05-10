@@ -28,6 +28,25 @@
             font-size: 1em;
         }
 
+        #ceylan-dropdown:empty
+        {
+            background-color: transparent;
+            border: none;
+            border-radius: 0px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #ceylan-dropdown
+        {
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -43,13 +62,30 @@ Ice cream cupcake powder. Danish I love pudding wafer sugar plum topping I love.
 Halvah I love powder jelly-o pastry topping ice cream lollipop candy canes.
 I love jelly beans chupa chups danish jujubes danish muffin soufflé.
         </textarea>
+
+        <h3>With contenteditable</h3>
+
+        <div id="demo-aera-editable" contenteditable="true">
+            Cupcake ipsum dolor. Sit amet candy chocolate wafer jelly-o jelly. Fruitcake apple pie powder.
+
+            Jujubes marzipan sweet pie applicake pastry bear claw. Pudding soufflé I love I love. Brownie muffin tart.
+            Tart apple pie muffin cotton candy dessert jelly beans. Tootsie roll dragée wafer donut donut halvah.
+            Chocolate tiramisu jelly beans gummies. Icing gummies bear claw.
+
+            Ice cream cupcake powder. Danish I love pudding wafer sugar plum topping I love.
+            Halvah I love powder jelly-o pastry topping ice cream lollipop candy canes.
+            I love jelly beans chupa chups danish jujubes danish muffin soufflé.
+        </div>
     </div>
 </body>
-
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="../../../node_modules/underscore/underscore.js"></script>
 <script src="../../lib/ceylan.js"></script>
 <script>
-    c = new Ceylan("#demo-aera");
-    c._showCaret();
+    $(document).ready(function()
+    {
+        c = new Ceylan("#demo-aera");
+        b = new Ceylan("#demo-aera-editable");
+    });
 </script>
 </html>
